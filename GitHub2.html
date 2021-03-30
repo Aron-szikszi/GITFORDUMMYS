@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="GitHub2.css">
+    <title>GitHub</title>
+</head>
+<body>
+    <h1>Git első lépések</h1>
+
+    <p><b>Magát a GitHub-ot <a href="https://git-scm.com/download/win">erről</a> a linkről tudjátok letölteni.</b></p>
+
+    <p>Érdemes a <b>C</b> vagy <b>D</b> meghajtóban dolgoznunk, így egyszerűbb </bry>
+    lesz a dolgunk. Ha le is telepítettük a programot akkor nincs más mint 
+    létrehozni egy egyszerű repository-t egy egyszerű névvel. 
+    </p>
+<p>Ezek után az azonosítás beállítása következik.(szükséghez a Github kapcsolathoz)</p>
+
+<ul><b>a. git config --global user.name "Github-on megadott név"</b></ul>
+<ul><b>b. git config --global user.email "Github-on regisztrált emailcím"</b></ul>
+
+<p>A következő lépés hogy hozzunk egy lokális mappát a repositorynkban.</p>
+ 
+<ul><b>a. git init</b></ul>
+
+<p>Következő, hozzunk létre egy fájlt a lokális mappában, adjuk hozzá </br>
+a fájlt az átmeneti tárolónkhoz.
+</p>
+
+<ul><b>a. git add file-name</b></ul>
+
+<p>Minden aktuális mappában, almappában található fájl hozzáadása a staging-are-hoz. </p>
+
+<ul><b>a. git add .</b></ul>
+
+<p>Piros: azon fájlok, amik nem kerültek be a staging-area-ba</p>
+<p>Zöld: azon fájlok, amik berültek a staging-area-ba</p>
+
+<p>státusz lekérdezés:</p>
+
+<ul><b>a. git status</b></ul>
+
+<p>Átmeneti tárolóból a repoba való áttöltés</p>
+
+<ul><b>a. git commit -m "Kötelező megjegyzést tenni"</b></ul>
+
+<p>Minden egyes bejegyzéshez a következőhöz hasonlót fogunk látni:</p>
+
+<ul><b>commit a661d9249509f8aa8f81f6f58129d57eb36b81d6
+    Author: Gergo Roth <roth@dcs.uni-pannon.hu></br>
+    Date: Wed Jul 6 18:36:01 2016 +0200</br>
+    My first commit.</b></ul>
+
+<p>Fájl és verzió feltöltése távoli tárhelyre</p>
+
+<ul><b>a. git remote –v (kapcsolatot ellenőrizzük)</br>
+    b. git push origin master</b></ul>
+    
+<a href="GitHub.html"> <img src="vissza.JPG" alt="vissza">
+
+</body>
+</html>
